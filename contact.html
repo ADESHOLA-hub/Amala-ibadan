@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amala Ibadan</title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    
+    <header id="navbar">
+        <nav>
+            <div class="logo"><img src="images/logo.png" alt="Amala Ibadan Logo"></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html"  style="color: #e08414;">Contact</a></li>
+                
+            </ul>
+            <img src="images/menu3.png" alt="Menu Icon" class="menu-btn">
+        </nav>
+    </header>
+
+
+    <section class="contact-section">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or inquiries, feel free to reach out to us!</p>
+            <ul>
+                <li><strong>Address:</strong> 123 Amala Street, Ibadan, Nigeria</li>
+                <li><strong>Phone:</strong> +234 123 4567</li>
+                <li><strong>Email:</strong> info@amalaiibadan.com</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+    
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+
+        document.addEventListener('scroll', () => {
+    var scroll_position = window.scrollY;
+    if (scroll_position > 250) {
+        navbar.style.backgroundColor = '#4138388f';
+    } else {
+        navbar.style.backgroundColor = 'transparent';
+    }
+});
+    </script>
+    </body>
+    </html>

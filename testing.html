@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Carousel</title>
+    <link rel="stylesheet" href="testing.css">
+</head>
+<body>
+
+    <div class="carousel-container">
+        <button class="prev">&#10094;</button>
+        <div class="carousel">
+            <img src="images/amala.jpeg" alt="Image 1">
+            <img src="images/amala.jpeg" alt="Image 2">
+            <img src="images/amala.jpeg" alt="Image 3">
+            <img src="images/amala.jpeg" alt="Image 4">
+        </div>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+const images = document.querySelectorAll('.carousel img');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let counter = 0;
+
+// Function to update the position of the carousel
+function updateCarousel() {
+    const size = images[0].clientWidth;  // Get width of the image
+    carousel.style.transform = 'translateX(' + (-size * counter) + 'px)';
+}
+
+// Event listener for the previous button
+prevBtn.addEventListener('click', () => {
+    if (counter > 0) {
+        counter--;
+        updateCarousel();
+    }
+});
+
+// Event listener for the next button
+nextBtn.addEventListener('click', () => {
+    if (counter < images.length - 1) {
+        counter++;
+        updateCarousel();
+    }
+});
+
+// Update carousel position when the window is resized
+window.addEventListener('resize', updateCarousel);
+
+    </script>
+</body>
+</html>

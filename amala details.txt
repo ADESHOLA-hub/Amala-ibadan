@@ -1,0 +1,21 @@
+HOME PAGE: minor changes made (ceo take a more official photo)
+
+ABOUT US PAGE: no changes made
+
+MENU PAGE: make the page more interactive and showing the prices and amount 
+which can be ordered each item having its own list and prices when clicked
+ on takes you to a page to process payment
+
+SERVICES PAGE: get more images showing events we've planned and hosted 
+ and more info on how we can help in planning theirs
+
+CONTACT US PAGE:make a more simplified method which is more direct and
+ straightforward for users to grab and get immediate understanding
+
+
+
+
+
+jottings-
+*the menu page header design bright and vibrant
+*

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amala Ibadan</title>
+    <link rel="stylesheet" href="menustyle.css">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    
+    <header id="navbar">
+        <nav>
+            <div class="logo"><img src="images/logo.png" alt="Amala Ibadan Logo"></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" style="color: #e08414;">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            <img src="images/menu3.png" alt="Menu Icon" class="menu-btn">
+        </nav>
+    </header>
+    <section class="amala">
+        <h1 class="home">DELICIOUS, ORGANIC AND DELIGHTFUL.</h1>
+        <p>authentic Nigerian dishes, using fresh, locally sourced ingredients to deliver flavorful, nutritious meals like Amala, Fufu, and Jollof Rice.</p>
+    </p>
+
+</section>
+
+<section class="menu-header">
+    <h1 style="color: #e08414; font-size: 6vmin;">Our Delicious Menu</h1>
+    <p>Explore a variety of authentic Nigerian dishes made with fresh, locally sourced ingredients.</p>
+</section>
+
+
+<section class="carousel-section" id="carousel-section">
+    <h1 class="carousel-header" id="carousel-header">Our Featured Dishes</h1>
+    <div class="carousel" id="carousel">
+        <button class="prev" id="prev">&#10094;</button>
+        <div class="carousel-images" id="carousel-images">
+            <img src="images/amalafood.jpg" alt="Amala">
+            <img src="images/jollof.jpg" alt="Jollof Rice">
+            <img src="images/fufuokra.jpg" alt="Fufu and Okra">
+            <img src="images/stew.jpg" alt="Nigerian Stew">
+            <img src="images/amala.jpeg" alt="Amala">
+        </div>
+        <button class="next" id="next">&#10095;</button>
+    </div>
+</section>
+   
+
+ 
+<!-- <footer class="footer">
+    <div class="footer-content">
+        <p>© 2024 Amala Ibadan Ltd. All rights reserved. The Amala Ibadan name, logos, and related marks are registered trademarks of Amala Ibadan Ltd.</p>
+        <p>
+            <a href="#" class="footer-link">Privacy Statement</a> | 
+            <a href="#" class="footer-link">Terms of Use</a>
+        </p>
+    </div>
+</footer>   -->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+    
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+
+        document.addEventListener('scroll', () => {
+    var scroll_position = window.scrollY;
+    if (scroll_position > 250) {
+        navbar.style.backgroundColor = '#4138388f';
+    } else {
+        navbar.style.backgroundColor = 'transparent';
+    }
+});
+
+const carouselImages = document.querySelector('.carousel-images');
+const images = document.querySelectorAll('.carousel-images img');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let counter = 0;
+
+// This function updates the size dynamically based on current image size
+function updateCarousel() {
+    const size = images[0].clientWidth + 20; // Adds margin between images
+    carouselImages.style.transform = 'translateX(' + (-size * counter) + 'px)';
+}
+
+prevBtn.addEventListener('click', () => {
+    if (counter <= 0) return;  // Stop at the first image
+    counter--;
+    updateCarousel();  // Update position of the images
+});
+
+nextBtn.addEventListener('click', () => {
+    if (counter >= images.length - 1) return;  // Stop at the last image
+    counter++;
+    updateCarousel();  // Update position of the images
+});
+
+// Update the carousel when the page loads or the window resizes
+window.addEventListener('resize', updateCarousel);
+updateCarousel();
+
+    </script>
+
+</body>
+</html>

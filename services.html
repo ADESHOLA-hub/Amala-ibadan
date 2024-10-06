@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amala Ibadan</title>
+    <link rel="stylesheet" href="servicestyle.css">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    
+    <header id="navbar">
+        <nav>
+            <div class="logo"><img src="images/logo.png" alt="Amala Ibadan Logo"></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html" style="color: #e08414;">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            <img src="images/menu3.png" alt="Menu Icon" class="menu-btn">
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Welcome to Amala Ibadan</h1>
+        <p>Your gateway to authentic Nigerian flavors and unforgettable events. At Amala Ibadan, we take pride in offering a rich culinary experience paired with exceptional service. Our mission is to bring the vibrant flavors of Nigeria to your table and create lasting memories through food.</p>
+    </section>
+
+    <section class="section1">
+        <h2>Our Services</h2>
+        <p>At Amamla Ibadan, we specialize in providing top-notch catering services for events of all sizes. Our team is dedicated to delivering authentic Nigerian dishes that will leave your guests raving! Whether it’s a wedding, corporate gathering, or a family celebration, we ensure that every meal is a delightful experience. Our services include personalized menu planning, on-site cooking, and exceptional customer service to make your event memorable.</p>
+        <div class="image1">
+        <img src="images/serve.jpg" alt="Catering services" class="section-img">
+        <img src="images/foodserve.jpg" alt="Catering team" class="section-img">
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="parag">
+        <h2>Events We've Hosted</h2>
+        <p>We have successfully catered various events, including weddings, corporate gatherings, and private parties. Our experience ensures that your event is a culinary success! We pride ourselves on our ability to adapt to each client's needs, offering a diverse range of menus tailored to fit any occasion. From intimate gatherings to large-scale events, we bring flavor and excitement to every table. Here are some highlights from our recent events:</p>
+       </div>
+        <div class="image2">
+        <img src="images/serve.jpg" alt="Wedding event" class="section-img">
+        <img src="images/serve.jpg" alt="Corporate event" class="section-img">
+        <img src="images/serve.jpg" alt="Birthday party" class="section-img">
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="image3">
+        <img src="images/foodserve.jpg" alt="Jollof rice" class="section-img">
+        <img src="images/foodserve.jpg" alt="Efo Riro" class="section-img">
+        <img src="images/foodserve.jpg" alt="Suya" class="section-img">
+    </div>
+    <div class="parag">
+        <h2>Delicious Dishes</h2>
+        <p>Explore our wide range of traditional Nigerian dishes, from spicy Jollof rice to savory Efo Riro. Each dish is crafted with the freshest ingredients and authentic flavors. We also offer unique twists on classic recipes to satisfy every palate. Whether you prefer vegetarian options or hearty meat dishes, our menu has something for everyone. Our goal is to create a memorable dining experience that showcases the best of Nigerian cuisine.</p>
+        <a href="menu.html" class="menu1">Menu</a>
+    </div>
+    </section>
+
+    <section class="section4">
+        <div class="detail">
+        <h2>Affordable Offers</h2>
+       <p>Unbeatable Prices, Unmatched Quality
+        We offer flexible packages to fit every budget, delivering top-notch service without the high price. Customize your event and only pay for what you need—no unnecessary extras! Our affordable luxury ensures you get gourmet meals and excellent service, all at a price you'll love. Plus, keep an eye out for special discounts and promotions to save even more!
+        </p>
+        <p>We believe in providing exceptional value for our services. Our pricing is competitive, ensuring you get the best quality without breaking the bank! We offer various packages to accommodate different budgets while maintaining the highest standards of food quality and service. Let us help you plan an event that is both memorable and affordable!</p>
+       </div>
+       <div class="image4">
+        <img src="images/handshake.webp" alt="Affordable pricing" class="section-img">
+        </div>
+    </section>
+
+
+    <section class="help-section">
+        <div class="help-content">
+            <h2>Need Assistance?</h2>
+            <p>If you have any questions or need help with anything, we're here for you! Don't hesitate to reach out to us.</p>
+            <p>Click the button below to contact us directly, and our team will be happy to assist you.</p>
+            <a href="contact.html" class="contact-button">Contact Us</a>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Amala Ibadan Ltd. All rights reserved. The Amala Ibadan name, logos, and related marks are registered trademarks of Amala Ibadan Ltd.</p>
+            <p>
+                <a href="#" class="footer-link">Privacy Statement</a> | 
+                <a href="#" class="footer-link">Terms of Use</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+    
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+
+        document.addEventListener('scroll', () => {
+    var scroll_position = window.scrollY;
+    if (scroll_position > 250) {
+        navbar.style.backgroundColor = '#4138388f';
+    } else {
+        navbar.style.backgroundColor = 'transparent';
+    }
+});
+    </script>
+    
+    </body>
+    </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amala Ibadan</title>
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="shortcut icon" href="images/logo.png">
+</head>
+<body>
+    
+    <header id="navbar">
+        <nav>
+            <div class="logo"><img src="images/logo.png" alt="Amala Ibadan Logo"></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" style="color: #e08414;">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            <img src="images/menu3.png" alt="Menu Icon" class="menu-btn">
+        </nav>
+    </header>
+
+    <section class="about-us">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Amala Ibadan is a restaurant that brings the rich culinary heritage of Ibadan to life. We specialize in serving traditional Yoruba meals, with Amala as our star dish. Using the finest ingredients and authentic recipes passed down through generations, we ensure every meal delivers an unforgettable taste of Ibadan.</p>
+            <p>Our passion for food and our deep connection to Yoruba culture inspire everything we do. We invite you to experience the warmth and flavors of Ibadan, right here at our restaurant.</p>
+        </div>
+        <div class="image-gallery">
+            <img src="images/blackworker.jpg" alt="Amala Dish" class="image-main">
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="section2">
+            <div class="dine2">
+        <img src="images/ceos.jpg" alt="">
+        <h1> Driven by Passion, Built on Perseverance</h1>
+        <p>Our owners, fueled by passion and unwavering determination, transformed a simple idea into a thriving success. 
+            Through hard work and resilience, 
+            they overcame challenges and built a business that inspires growth and excellence.</p>
+    </div>
+        <div class="dine">
+            <h1>The Backbone of Our Success</h1>
+            <p>Our workers are the driving force behind everything we achieve. With dedication, skill, 
+                and teamwork, they turn challenges into opportunities, ensuring the highest standards of excellence. 
+                Their commitment and hard work are the foundation of our continued success.</p>
+
+    <img src="images/organicveggies.webp" alt="">
+        </div>
+        </div>
+    </section>
+
+
+    <section class="events-section">
+        <div class="event-content">
+            <div class="event-text">
+                <h1>Hosting & Catering Services</h1>
+                <p>
+                    We specialize in hosting memorable events, from intimate gatherings to large-scale celebrations.
+                    With our expert team, we ensure that every event is perfectly planned and executed. Whether it's
+                    a wedding, corporate event, or private party, we handle everything from venue setup to catering, providing
+                    customized menus that suit your unique preferences and needs.
+                </p>
+                <p>
+                    Our catering service ensures that every guest enjoys an unforgettable dining experience. From gourmet
+                    dishes to personalized menus, we focus on delivering top-quality food and service that exceeds expectations.
+                </p>
+                <a href="services.html" class="button">Services</a>
+            </div>
+            <div class="event-images">
+                <img src="images/foodserve.jpg" alt="Event Hosting">
+                <img src="images/serve.jpg" alt="Event Catering">
+            </div>
+        </div>
+    </section>
+    
+    <section class="amala-section">
+        <div class="amala-images">
+            <img src="images/amala1.jpg" alt="Amala with Efo Riro">
+            <img src="images/amalafood.jpg" alt="Amala with Ogbono">
+        </div>
+        <div class="amala-content">
+            <h2>The Delight of Amala</h2>
+            <p>
+                Amala is more than just a dish; it’s a cherished staple of Yoruba cuisine that embodies the rich culinary traditions of Nigeria. Made from yam flour or cassava flour, Amala is known for its unique texture and earthy flavor, making it a perfect accompaniment to a variety of soups and stews.
+            </p>
+            <p>
+                The preparation of Amala requires skill and patience. The dough is stirred vigorously until it becomes smooth and elastic, showcasing the artistry behind this beloved dish. Often served with sumptuous soups like Efo Riro or Ogbono, Amala creates a delightful dining experience that brings families and friends together.
+            </p>
+            <p>
+                At Amala Ibadan, we take pride in serving authentic Amala prepared with the finest ingredients, allowing you to savor the true taste of Yoruba culture in every bite.
+            </p>
+        </div>
+       
+    </section>
+    
+    <section class="help-section">
+        <div class="help-content">
+            <h2>Need Assistance?</h2>
+            <p>If you have any questions or need help with anything, we're here for you! Don't hesitate to reach out to us.</p>
+            <p>Click the button below to contact us directly, and our team will be happy to assist you.</p>
+            <a href="contact.html" class="contact-button">Contact Us</a>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Amala Ibadan Ltd. All rights reserved. The Amala Ibadan name, logos, and related marks are registered trademarks of Amala Ibadan Ltd.</p>
+            <p>
+                <a href="#" class="footer-link">Privacy Statement</a> | 
+                <a href="#" class="footer-link">Terms of Use</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+    
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+
+        document.addEventListener('scroll', () => {
+    var scroll_position = window.scrollY;
+    if (scroll_position > 250) {
+        navbar.style.backgroundColor = '#4138388f';
+    } else {
+        navbar.style.backgroundColor = 'transparent';
+    }
+});
+    </script>
+
+
+</body>
+</html>

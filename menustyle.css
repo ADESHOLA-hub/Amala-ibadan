@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #918d8d;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/orange.jpg') no-repeat center center/cover;  */
+}
+
+header {
+    background: transparent;
+    color: #fff;
+    padding: 4px;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 50px;
+}
+
+nav ul li {
+    margin-left: 70px;
+}
+
+nav ul li a {
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(207, 120, 5);
+}
+
+
+.search-container {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn {
+    /* background-color: rgb(207, 120, 5); */
+    color: rgb(91, 88, 88);
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin-left: 150px;
+    border: 2px solid grey;
+}
+
+.search-bar {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-right: 60px;
+    
+}
+
+.menu-btn{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+}
+
+h1 {
+
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.amala {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/food.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 70vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.amala h1 {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: -100px;
+  font-style: normal;
+    font-size: 50px;
+    color: #fff;
+}
+
+.amala p {
+    font-size: 15px;
+    color: #fff;
+
+}
+
+.menu-header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f4ef;
+}
+
+.menu-header h1 {
+    color: #e08414;
+    font-size: 6vmin;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.menu-header p {
+    color: #4d4d4d;
+    font-size: 2.5vmin;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-section {
+    padding: 40px 20px;
+    background-color: #f9f4ef;
+}
+
+.carousel-header {
+    text-align: left;
+    font-size: 5vmin;
+    color: #e08414;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #e08414;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 6px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: #5d5b5b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%; /* Ensure it spans the full width */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer a.footer-link {
+    color: #e08414;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a.footer-link:hover {
+    color: #3f76e4;
+}
+
+    @media (max-width: 1000px) {
+        .nav-links {
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            background:#b45100;
+            margin-top: -2000px;
+            transition: all 1s ease;
+            position: fixed;
+        }
+    
+        .mobile-menu {
+            margin-top: -10px;
+            margin-left: -6px;
+            border-bottom-right-radius: 150px;
+        }
+    
+        .nav-links li {
+            margin: 30px auto;
+        }
+    
+        .nav-links li a {
+            color: #ffffff;
+        }
+    
+        nav {
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 1px;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            margin-left: 0;
+        }
+    
+        nav ul li {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    
+        nav ul li a {
+            font-size: 20px;
+        }
+    
+        .menu-btn {
+            display: block;
+        }
+    
+        .menu img {
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+        }
+
+        .amala h1 {
+            font-size: 30px;
+        }
+    
+        .amala p {
+            font-size: 16px;
+        }
+        .menu-header h1 {
+            font-size: 9vmin;
+        }
+        .menu-header p {
+            font-size: 4vmin;
+        }
+        .carousel-images img {
+            max-width: 200px;
+        }
+        
+        .carousel-header {
+            font-size: 7vmin;
+        }
+        
+        button.prev, button.next {
+            font-size: 1.5rem;
+        }
+    
+    }
